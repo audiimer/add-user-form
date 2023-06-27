@@ -1,0 +1,29 @@
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .tableContainer {
+    margin-top: 20px;
+  }
+
+  .tableContainer table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  .tableContainer th,
+  .tableContainer td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .tableContainer th {
+    font-weight: bold;
+  }
+
+  .tableContainer tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
