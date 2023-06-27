@@ -53,9 +53,10 @@ function AddUserForm({ savedUser }) {
       age: age,
     };
 
-    //
+    //prop that saves the data in a function to be used in the User Component
     savedUser(user);
 
+    //Set name and age to its default state
     setName("");
     setAge("");
   };
@@ -66,6 +67,7 @@ function AddUserForm({ savedUser }) {
   };
 
   return (
+    <React.Fragment>
     <div className={form.formContainer}>
       <Modal isOpen={isModalOpen} onClose={closeModal} message={modalMessage} />
       <div className={form.test}>
@@ -97,6 +99,7 @@ function AddUserForm({ savedUser }) {
         <button type="submit">Submit</button>
       </form>
     </div>
+    </React.Fragment>
   );
 }
 

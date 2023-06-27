@@ -10,6 +10,7 @@ function Users() {
   };
 
   return (
+    <React.Fragment>
     <div className={user.container}>
       <AddUserForm savedUser={addUser} />
       <div className={user.tableContainer}>
@@ -31,6 +32,7 @@ function Users() {
         </table>
       </div>
     </div>
+    </React.Fragment>
   );
 }
 
