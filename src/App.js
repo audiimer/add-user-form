@@ -6,8 +6,10 @@ function App() {
   return (
     <div className={styled.app}>
 
-      <Users/>
+      <div className={styled.container}>
 
+      <Users/>
+      </div>
     </div>
   );
 }

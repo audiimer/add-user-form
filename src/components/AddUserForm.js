@@ -22,7 +22,6 @@ function AddUserForm({ savedUser }) {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    console.log(typeof name);
 
     if (!name.trim()) {
         setIsModalOpen(true);
@@ -64,7 +63,9 @@ function AddUserForm({ savedUser }) {
   return (
     <div className={form.formContainer}>
       <Modal isOpen={isModalOpen} onClose={closeModal} message={modalMessage} />
+      <div className={form.test}>
       <h2>User Form</h2>
+      </div>
       <form onSubmit={handleSubmit}>
         <div className={form.input}>
           <div>
