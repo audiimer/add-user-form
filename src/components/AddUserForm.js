@@ -3,6 +3,7 @@ import Modal from "./Modal";
 import form from "./form.module.css";
 
 function AddUserForm({ savedUser }) {
+  // Setting up the useState for name, age, modal trigger and errors
   const [name, setName] = useState("");
   const [age, setAge] = useState("");
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -20,9 +21,12 @@ function AddUserForm({ savedUser }) {
     setAgeError(false);
   };
 
+
+  // Form submission trigger
   const handleSubmit = (event) => {
     event.preventDefault();
 
+    //Conditional statement that verifies if the input data is valid
     if (!name.trim()) {
         setIsModalOpen(true);
         setModalMessage("Name cannot be empty.");
@@ -49,6 +53,7 @@ function AddUserForm({ savedUser }) {
       age: age,
     };
 
+    //
     savedUser(user);
 
     setName("");
